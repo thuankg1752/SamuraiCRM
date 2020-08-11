@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: SamuraiCRM_production
-  username: thuan
+  username: SamuraiCRM
   password: <%= ENV['SAMURAICRM_DATABASE_PASSWORD'] %>
