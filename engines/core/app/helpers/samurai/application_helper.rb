@@ -6,6 +6,11 @@ module Samurai
       alert: "alert alert-danger",
       error: "alert alert-danger"
     }
+
+    def active(path)
+      current_page?(path) ? 'active' : ''
+    end
+
     def flash_class(level)
       FLASH_CLASSES[level]
     end
