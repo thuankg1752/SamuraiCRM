@@ -2,5 +2,6 @@
 #   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 # end
 
-Samurai::Core::Engine.routes.draw do
+Rails.application.routes.draw do
+    mount Samurai::Core::Engine => "/", as: 'samurai'
 end
