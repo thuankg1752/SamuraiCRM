@@ -1,6 +1,6 @@
 module Samurai
     class DashboardController < ApplicationController
-        authorize_resource :class => false
+        before_action :class => false
         def index
         end
     end
