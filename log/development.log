@@ -6477,3 +6477,25 @@ Processing by Samurai::Admin::AdminController#index as HTML
 Completed 200 OK in 46ms (Views: 38.8ms | ActiveRecord: 2.7ms)
 
 
+Started GET "/admin/users" for ::1 at 2020-08-11 11:16:37 +0700
+Processing by Samurai::Admin::UsersController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (2.5ms)
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application (6.5ms)
+Completed 200 OK in 38ms (Views: 30.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-11 11:16:37 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (4.0ms)
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (10.4ms)
+Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 2.5ms)
+
+

@@ -27,12 +27,19 @@ Gem::Specification.new do |spec|
   spec.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   spec.add_dependency "rails"
 
-  spec.add_development_dependency "pg"
-
   # bootstrap-sass
   spec.add_dependency 'sass-rails', ">= 5"
   spec.add_dependency 'bootstrap-sass', "~> 3.4.1"
   spec.add_dependency 'autoprefixer-rails', "~> 9.7.3"
+
   # devise
   spec.add_dependency 'devise', '~> 4.7.1'
+
+  # cancan
+  spec.add_dependency 'cancan'
+
+  # postgre
+  spec.add_development_dependency "pg"
+  # rspec-rails
+  
 end
