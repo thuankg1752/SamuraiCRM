@@ -3,10 +3,11 @@ require_dependency "samurai/contacts/application_controller"
 module Samurai::Contacts
   class ContactsController < ApplicationController
     before_action :set_contact, only: [:show, :edit, :update, :destroy]
+    before_action class: Samurai::Contacts::Contact
 
     # GET /contacts
     def index
-      @contacts = Contact.all
+      @contacts = current_user.contacts
     end
 
     # GET /contacts/1
