@@ -6499,3 +6499,926 @@ Processing by Samurai::Admin::AdminController#index as HTML
 Completed 200 OK in 40ms (Views: 32.9ms | ActiveRecord: 2.5ms)
 
 
+Started GET "/" for ::1 at 2020-08-18 08:38:32 +0700
+Processing by Samurai::DashboardController#index as HTML
+Completed 401 Unauthorized in 7ms
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 08:38:32 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (14.3ms)
+Completed 200 OK in 5141ms (Views: 5052.9ms | ActiveRecord: 56.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 09:16:37 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (2.8ms)
+Completed 200 OK in 24ms (Views: 14.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 09:16:38 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (6.6ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-18 09:16:47 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D0hAIVaZVB/RXMPEd/oqAUQKJiLLR7XOxJTH1tnCUQDS5gDdp4+0rJgEqSnwtGYRcJMtK/rp0r5FMRvAln5Diw==", "user"=>{"email"=>"thuankg1752@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSamurai::User Load (2.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."email" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["email", "thuankg1752@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 227ms (ActiveRecord: 2.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"D0hAIVaZVB/RXMPEd/oqAUQKJiLLR7XOxJTH1tnCUQDS5gDdp4+0rJgEqSnwtGYRcJMtK/rp0r5FMRvAln5Diw==", "user"=>{"email"=>"thuankg1752@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (2.6ms)
+Completed 200 OK in 216ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-18 09:16:52 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uTwv9/XkBZplz0SgFfp7sQyFvxVFHIbNevqWq0esO8Fkkm8LBPLlKSyXLk2StDehOBy0HHSy4b37X0q9CBApSg==", "user"=>{"email"=>"thuankg1752@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."email" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["email", "thuankg1752@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 250ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:16:52 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.3ms)
+Completed 200 OK in 17ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:16:55 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin" for ::1 at 2020-08-18 09:16:57 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (4.5ms)
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (9.4ms)
+Completed 200 OK in 37ms (Views: 27.2ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:17:00 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (1.1ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _9f3e00a572c26248f29255a75482a184 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (6.0ms)
+Completed 200 OK in 36ms (Views: 30.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:17:01 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.8ms)
+Completed 200 OK in 32ms (Views: 24.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:17:01 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (1.0ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.6ms)
+Completed 200 OK in 53ms (Views: 45.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:17:03 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (5.0ms)
+  [1m[36mSamurai::User Load (0.6ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (11.0ms)
+Completed 200 OK in 43ms (Views: 34.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:17:05 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:18:36 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:18:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:18:37 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2020-08-18 09:18:38 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _8a863658dbde5ce8489eaff7b46d1f5a at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (5.8ms)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:18:39 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (1.1ms)
+Completed 200 OK in 42ms (Views: 34.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:18:40 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (3.9ms)
+  [1m[36mSamurai::User Load (0.5ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (11.4ms)
+Completed 200 OK in 53ms (Views: 44.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:18:41 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _87283fb1624f03533577e23b6eb6d656 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (6.6ms)
+Completed 200 OK in 48ms (Views: 42.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:18:41 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.5ms)
+Completed 200 OK in 40ms (Views: 32.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:18:45 +0700
+Processing by Samurai::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 09:18:45 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (5.7ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-08-18 09:18:47 +0700
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering engines/core/app/views/devise/registrations/new.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _efb9c12f1fdcb718b9e55f278e25c240 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/new.html.erb:5)
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered engines/core/app/views/devise/registrations/new.html.erb within layouts/samurai/application (3.9ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-08-18 09:18:57 +0700
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qoK04ZndDCsgTNbpAXZwRBqFFzA1O3Fb1Ji/mAc9MO5Ldg7d4sAd7Gz/VqnM/ZadQ654Vkfd85u94MXxkRfVvw==", "user"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSamurai::User Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "samurai_users" WHERE "samurai_users"."email" = $1 LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "samurai_users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "test1@gmail.com"], ["encrypted_password", "$2a$12$4n12vj27UBK37cGK/ZXYlu4xAhnMjdF5jK7nc58wPKFCH6v2b8bNu"], ["created_at", "2020-08-18 02:18:57.534332"], ["updated_at", "2020-08-18 02:18:57.534332"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 235ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:18:57 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.2ms)
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:19:01 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _9c0b1ef01b518c70d6c5e4657c762d74 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (7.6ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:19:03 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (3.0ms)
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (8.2ms)
+Completed 200 OK in 35ms (Views: 27.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:19:04 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _f64e0cc48b116bf03c52ac7c04b3f1d6 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (5.0ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:04 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.8ms)
+Completed 200 OK in 39ms (Views: 32.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:19:06 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (1.0ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _b96bd0e3627860c5f4a54aa0cb12387a at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (5.3ms)
+Completed 200 OK in 31ms (Views: 25.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:06 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (1.5ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.9ms)
+Completed 200 OK in 38ms (Views: 28.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:19:06 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (1.0ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _6cfdb76d0384bad93631f02e4f029e7b at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (5.5ms)
+Completed 200 OK in 32ms (Views: 27.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:19:07 +0700
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_out"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/edit" for ::1 at 2020-08-18 09:19:13 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (1.0ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _9538d498b6dd3985c61fab6279a94ce1 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (5.3ms)
+Completed 200 OK in 31ms (Views: 25.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:19:14 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _03dac47b5e1da42b362ad6150bf2fd0c at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (6.1ms)
+Completed 200 OK in 35ms (Views: 30.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:19:14 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (3.8ms)
+  [1m[36mSamurai::User Load (1.2ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (11.7ms)
+Completed 200 OK in 50ms (Views: 42.0ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-08-18 09:19:16 +0700
+Processing by Samurai::Admin::UsersController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (2.2ms)
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application (6.8ms)
+Completed 200 OK in 36ms (Views: 28.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:20 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.9ms)
+Completed 200 OK in 39ms (Views: 32.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:32 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.3ms)
+Completed 200 OK in 13ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:33 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (1.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.7ms)
+Completed 200 OK in 30ms (Views: 23.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:45 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.6ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (1.5ms)
+Completed 200 OK in 255ms (Views: 213.0ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:19:47 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 19ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:19:47 +0700
+Processing by Samurai::DashboardController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 09:19:47 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (1.4ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (11.3ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-18 09:20:01 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jkJbmuodwnf+qWTfzRbUU7ChJYUtzJIHwSj486fkRQ9zahQpuDVvMvGh8pKBB+/rbtQOf0/wrzQu8iOYomPNjQ==", "user"=>{"email"=>"thuankg1752@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."email" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["email", "thuankg1752@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 201ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:20:01 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.3ms)
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:20:02 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:20:02 +0700
+Processing by Samurai::DashboardController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 09:20:02 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (6.2ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-18 09:20:10 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ImRblJ+Ci8KGpOCev6kidvdJ6njzEbx3KqeDtxR9D5l5OxHtJhey6FAWyUHZwpBK6ACChuN40bD4AplDervIkQ==", "user"=>{"email"=>"test1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."email" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["email", "test1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 228ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:20:10 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.2ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.4ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:20:14 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.6ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _d9219d4634194d8c80defe643c58aee1 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (4.1ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:20:15 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.8ms)
+Completed 200 OK in 39ms (Views: 30.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:20:15 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.8ms)
+Completed 200 OK in 42ms (Views: 34.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:20:15 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _17f02fe2f774ba5d84970a41c4ba3d11 at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (9.7ms)
+Completed 200 OK in 44ms (Views: 38.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_out" for ::1 at 2020-08-18 09:20:16 +0700
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:20:16 +0700
+Processing by Samurai::DashboardController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-08-18 09:20:16 +0700
+Processing by Devise::SessionsController#new as HTML
+  Rendering engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered engines/core/app/views/devise/sessions/new.html.erb within layouts/samurai/application (7.6ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-08-18 09:25:53 +0700
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yC/qKNkpALWslsBWniRnXAGQXSZ45DPAtB54+/j+qbRjD+1v1ygFxS1qXKobdaQ1COBzLdX5fZfMwYutQJ4syg==", "user"=>{"email"=>"thuankg1752@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."email" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["email", "thuankg1752@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 194ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:25:53 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:25:58 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.2ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _276fc872a20c4c6daf96baa35e8d3c5e at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (3.5ms)
+Completed 200 OK in 23ms (Views: 21.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:26:00 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (3.9ms)
+  [1m[36mSamurai::User Load (0.7ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (10.4ms)
+Completed 200 OK in 42ms (Views: 31.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-08-18 09:26:04 +0700
+Processing by Samurai::Admin::UsersController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (2.4ms)
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application (6.1ms)
+Completed 200 OK in 37ms (Views: 29.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:26:05 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.2ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (1.6ms)
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (4.2ms)
+Completed 200 OK in 20ms (Views: 16.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-08-18 09:26:05 +0700
+Processing by Samurai::Admin::UsersController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (3.6ms)
+  [1m[36mSamurai::User Load (0.6ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application (9.9ms)
+Completed 200 OK in 57ms (Views: 47.3ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:26:06 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (5.9ms)
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (13.7ms)
+Completed 200 OK in 48ms (Views: 38.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/admin/users" for ::1 at 2020-08-18 09:26:10 +0700
+Processing by Samurai::Admin::UsersController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (4.4ms)
+  [1m[36mSamurai::User Load (0.5ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/users/index.html.erb within layouts/samurai/application (10.4ms)
+Completed 200 OK in 44ms (Views: 34.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin" for ::1 at 2020-08-18 09:26:13 +0700
+Processing by Samurai::Admin::AdminController#index as HTML
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "samurai_users"[0m
+  Rendered engines/core/app/views/samurai/admin/shared/_nav.html.erb (2.7ms)
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" ORDER BY created_at desc LIMIT $1[0m  [["LIMIT", 3]]
+  Rendered engines/core/app/views/samurai/admin/admin/index.html.erb within layouts/samurai/application (6.3ms)
+Completed 200 OK in 37ms (Views: 32.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:19 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.2ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.3ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:19 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.9ms)
+Completed 200 OK in 48ms (Views: 41.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for ::1 at 2020-08-18 09:26:21 +0700
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mSamurai::User Load (0.4ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application
+DEPRECATION WARNING: [Devise] `DeviseHelper.devise_error_messages!`
+is deprecated and it will be removed in the next major version.
+To customize the errors styles please run `rails g devise:views` and modify the
+`devise/shared/error_messages` partial.
+ (called from block in _dc9654ed4a53b9a265583c7c87d057ff at /home/thuan/SamuraiCRM/engines/core/app/views/devise/registrations/edit.html.erb:7)
+  Rendered engines/core/app/views/devise/registrations/edit.html.erb within layouts/samurai/application (2.9ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:21 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.9ms)
+Completed 200 OK in 38ms (Views: 30.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:22 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.7ms)
+Completed 200 OK in 42ms (Views: 35.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:23 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:23 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (1.0ms)
+Completed 200 OK in 42ms (Views: 35.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:23 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.8ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (1.1ms)
+Completed 200 OK in 42ms (Views: 35.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:26:24 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (0.9ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (1.2ms)
+Completed 200 OK in 39ms (Views: 32.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2020-08-18 09:33:51 +0700
+Processing by Samurai::DashboardController#index as HTML
+  [1m[36mSamurai::User Load (1.3ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application
+  Rendered engines/core/app/views/samurai/dashboard/index.html.erb within layouts/samurai/application (0.6ms)
+Completed 200 OK in 32ms (Views: 23.6ms | ActiveRecord: 1.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(523650061002762120)[0m
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSamuraiContactsContacts (20200818014931)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(523650061002762120)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(523650061002762120)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSamuraiContactsContacts (20200818014931)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE "samurai_contacts_contacts" ("id" bigserial primary key, "first_name" character varying, "last_name" character varying, "company" character varying, "email" character varying, "phone" character varying, "user_id" bigint, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_b1d1888804"
+FOREIGN KEY ("user_id")
+  REFERENCES "samurai_users" ("id")
+)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE  INDEX  "index_samurai_contacts_contacts_on_user_id" ON "samurai_contacts_contacts"  ("user_id")[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200818014931"]]
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(523650061002762120)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/contacts" for ::1 at 2020-08-18 10:03:32 +0700
+Processing by Samurai::Contacts::ContactsController#index as HTML
+  [1m[36mSamurai::User Load (0.6ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/contacts/app/views/samurai/contacts/contacts/index.html.erb within layouts/samurai/contacts/application
+  [1m[36mSamurai::Contacts::Contact Load (0.8ms)[0m  [1m[34mSELECT "samurai_contacts_contacts".* FROM "samurai_contacts_contacts"[0m
+  Rendered engines/contacts/app/views/samurai/contacts/contacts/index.html.erb within layouts/samurai/contacts/application (6.9ms)
+Completed 200 OK in 242ms (Views: 202.0ms | ActiveRecord: 11.2ms)
+
+
+Started GET "/contacts" for ::1 at 2020-08-18 10:04:48 +0700
+Processing by Samurai::Contacts::ContactsController#index as HTML
+  [1m[36mSamurai::User Load (0.2ms)[0m  [1m[34mSELECT  "samurai_users".* FROM "samurai_users" WHERE "samurai_users"."id" = $1 ORDER BY "samurai_users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering engines/contacts/app/views/samurai/contacts/contacts/index.html.erb within layouts/samurai/application
+  [1m[36mSamurai::Contacts::Contact Load (0.3ms)[0m  [1m[34mSELECT "samurai_contacts_contacts".* FROM "samurai_contacts_contacts"[0m
+  Rendered engines/contacts/app/views/samurai/contacts/contacts/index.html.erb within layouts/samurai/application (1.6ms)
+Completed 200 OK in 23ms (Views: 20.9ms | ActiveRecord: 0.5ms)
+
+
